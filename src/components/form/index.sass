@@ -1,0 +1,54 @@
+label
+	margin-bottom: 4px
+	display: flex
+	color: #333
+	font-family: "Montserrat"
+	font-weight: 300
+	font-size: 14px
+	align-items: baseline
+	i.fa
+		font-size: 16px
+		padding-left: 12px
+		cursor: pointer
+
+input
+	font-size: 14px
+	padding: 10px 12px
+	width: 100%
+	border-radius: 2px
+	border: 1px solid #e0e4ec
+	font-family: "Montserrat"
+	font-weight: 300
+	color: #4c4c4c
+	box-sizing: border-box
+	&:hover
+		border: 1px solid #cbd2e0
+	&:focus
+		outline: none
+		border: 1px solid #0154ea
+
+.input-wrapper
+	position: relative
+	.click-outside-wrap
+		right: 0
+		top: 100%
+
+.error-wrap
+	position: absolute
+	left: 0
+	top: 100%
+	display: flex
+	justify-content: center
+	padding-top: 4px
+	align-items: center
+	span
+		white-space: nowrap
+		color: #e42f2f
+		font-family: 'Roboto Light'
+		font-size: 10px
+
+.input-outer-wrap
+	margin-bottom: 20px
+	.input-wrapper-error
+		input
+			border: 1px solid #e42f2f

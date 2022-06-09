@@ -1,0 +1,52 @@
+.options-wrapper
+    opacity: 0
+    pointer-events: none
+    &--active
+        opacity: 1
+        pointer-events: auto
+
+.options-wrapper
+    background-color: #fff
+    width: 250px
+    z-index: 99
+    position: absolute
+    right: 20px
+    border: 1px solid #e0e4ec
+    box-shadow: 1px 1px 2px 0 rgba(0, 0, 0, 0.07)
+    right: 0
+    margin-top: 8px
+    .select-wrap
+        position: relative
+        padding: 10px 15px
+        cursor: pointer
+        border-bottom: 1px solid #e0e4ec
+        span
+            font-size: 15px
+            position: relative
+            font-family: 'Roboto Light'
+            box-sizing: border-box
+            color: #5f5f5f
+    .select-wrap-focused
+        background-color: rgba(#0154ea, 0.05)
+
+.select-input-wrap
+    position: relative
+    width: 100%
+    display: flex
+    .icon-down
+        position: absolute
+        top: 0
+        right: 0
+        width: 15%
+        display: flex
+        justify-content: center
+        align-items: center
+        height: 100%
+        i
+            color: #e0e4ec
+            font-size: 18px
+    &:hover
+        .icon-down i
+            color: #cbd2e0
+        input
+            border: 1px solid #cbd2e0
